@@ -23,7 +23,7 @@ module AresMUSH
           return nil
         end
 
-        rating = FS3Skills.ability_rating(enactor, "Kenning")
+        rating = FS3Skills.ability_rating(enactor, "Cure")
 
         if rating < 2
           client.emit_failure("You do not possess this Advantage.")
