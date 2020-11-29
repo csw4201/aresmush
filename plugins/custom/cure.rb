@@ -18,7 +18,7 @@ module AresMUSH
         char = Character.find_one_by_name(self.name)
         wounds = char.damage.select { |d| d.healing_points > 0 }
 
-        if !wounds
+        if wounds.empty?
           client.emit_failure("#{name} has no curable wounds.")
           return nil
         end
