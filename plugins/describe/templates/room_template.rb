@@ -95,9 +95,9 @@ module AresMUSH
         else
           status = t('describe.foyer_room_occupied')
         end
-        linebreak = i % 2 == 0 ? "%R          " : ""
-        room_name = "#{exit_destination(e)} (#{status})"
-        "#{linebreak}%xh#{exit_name(e)}%xn #{left(room_name,29)}"
+        linebreak = i % 2 == 0 ? "%R     " : ""
+        room_name = "#{exit_destination(e)}"
+        "#{linebreak}%xh#{exit_name(e)}%xn #{left(room_name,30)}"
       end
       
       def char_shortdesc(char)
