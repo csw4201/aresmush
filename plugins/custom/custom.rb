@@ -14,7 +14,7 @@ module AresMUSH
 
       case cmd.root
       when "wordcount"
-        return WordCountCmd
+        return WordcountCmd
       end
 
       case cmd.root
